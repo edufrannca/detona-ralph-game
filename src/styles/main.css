@@ -40,9 +40,6 @@
     background-color: #ff0000;
 }
 
-/* ===========================
-   MENU DE VIDAS E PONTUAÇÃO
-   =========================== */
 
 .menu-lives {
     display: flex;
@@ -73,9 +70,6 @@
     margin-top: 1rem;
 }
 
-/* ===========================
-   CONTROLES DE JOGO (START/RESTART)
-   =========================== */
 
 .controls {
     display: flex;
