@@ -1,0 +1,104 @@
+/* ===========================
+   ESTILO BASE DO JOGO DETONA RALPH
+   =========================== */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../imgs/wall.png);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid gold;
+}
+
+.panel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #a4713b;
+}
+
+.enemy {
+    background-image: url("../imgs/ralph.png");
+    background-size: cover;
+    background-color: #ff0000;
+}
+
+/* ===========================
+   MENU DE VIDAS E PONTUAÇÃO
+   =========================== */
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-lives h2 {
+    margin-left: 10px;
+    color: gold;
+    font-family: "Press Start 2P", cursive;
+    font-size: 18px;
+}
+
+/* Efeito de alerta quando restar poucas vidas */
+.menu-lives.low-life h2 {
+    color: red;
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+}
+
+/* ===========================
+   CONTROLES DE JOGO (START/RESTART)
+   =========================== */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.controls button {
+    background-color: gold;
+    color: #000;
+    font-family: "Press Start 2P", cursive;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.controls button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
