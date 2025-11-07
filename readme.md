@@ -38,7 +38,7 @@
 
 ## 🕹️ Demonstração
 
-👉 [**Jogue Agora no GitHub Pages**](https://SEU-USUARIO.github.io/detona-ralph-game)
+👉 [**Jogue Agora no GitHub Pages**](https://edufrannca.github.io/detona-ralph-game/)
 
 ---
 
